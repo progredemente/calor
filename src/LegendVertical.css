@@ -52,6 +52,7 @@
     height: calc(var(--lower) - var(--upper));
     margin-top: var(--upper);
     position: absolute;
+    cursor: grab;
     transform: translateX(calc(-1 * var(--legend-border)));
 }
 

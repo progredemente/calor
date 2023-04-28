@@ -52,6 +52,7 @@
     width: calc(var(--lower) - var(--upper));
     margin-left: calc(400px - var(--lower));
     position: absolute;
+    cursor: grab;
     transform: translateY(calc(-1 * var(--legend-border)));
 }
 
