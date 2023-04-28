@@ -1,0 +1,73 @@
+.legend-vertical {
+    --legend-width: 50px;
+    --legend-border: 4px;
+    --shadow-color: #00000077;
+    --cursor-width: 35px;
+    display: block;
+    height: 400px;
+    width: var(--legend-width);
+    border: var(--legend-border) solid transparent;
+    box-sizing: content-box;
+    position: relative;
+    background-image: linear-gradient(
+        to bottom,
+        black 0%,
+        red calc(100%*1/7),
+        yellow calc(100%*2/7),
+        lime calc(100%*3/7),
+        cyan calc(100%*4/7),
+        blue calc(100%*5/7),
+        magenta calc(100%*6/7),
+        white 100%
+    );
+    background-repeat: no-repeat;
+    margin: calc(var(--cursor-width)/2) 0;
+}
+
+.legend-vertical::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: var(--upper);
+    width: 100%;
+    background-color: var(--shadow-color);
+    z-index: 0;
+}
+
+.legend-vertical::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: calc(400px - var(--lower));
+    width: 100%;
+    background-color: var(--shadow-color);
+    margin-top: var(--lower);
+    z-index: 0;
+}
+
+.frame-vertical {
+    display: block;
+    border: var(--legend-border) solid black;
+    width: calc(100% + var(--legend-border) * 2);
+    height: calc(var(--lower) - var(--upper));
+    margin-top: var(--upper);
+    position: absolute;
+    transform: translateX(calc(-1 * var(--legend-border)));
+}
+
+.cursor-vertical {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    margin-top: var(--distance);
+    height: var(--cursor-width);
+    width: var(--cursor-width);
+    transform: translateY(-50%) translateX(calc((var(--legend-width) - var(--cursor-width))/2 - var(--legend-border)));
+    border: var(--legend-border) solid black;
+    box-sizing: content-box;
+    cursor: grab;
+    border-radius: 50px;
+    position: absolute;
+    z-index: 1;
+}

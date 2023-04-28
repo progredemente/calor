@@ -1,0 +1,57 @@
+.app {
+    position: relative;
+}
+
+.legend-container {
+    position: absolute;
+    padding: 50px;
+    top: 0;
+}
+
+.legend-title {
+    width: 200px;
+}
+
+@media (pointer: coarse) {
+    .legend-container {
+        position: initial;
+        padding: initial;
+        top: initial;
+        margin: 1em 0;
+    }
+
+    .legend-title {
+        width: initial;
+        color: #f29100;
+    }
+}
+
+.container {
+    position: relative;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px 0;
+    color: #f29100;
+}
+
+.title > * {
+    width: 420px;
+}
+
+.subtitle {
+    font-size: 1.5em;
+}
+
+.signature {
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+    color: #f20000;
+}
