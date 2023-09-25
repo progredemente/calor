@@ -13,8 +13,12 @@ html {
 }
 
 body {
-    margin: 0 auto;
-    font-size: 1.5em;
-    overscroll-behavior-x: contain;
-    max-width: 1000px;
+  margin: 0;
+  font-size: 1.5em;
+  overscroll-behavior-x: contain;
+}
+
+.apps-bar-container {
+    --apps-bar-primary-color: #f20000 !important;
+    --apps-bar-secondary-color: #f29100 !important;
 }
