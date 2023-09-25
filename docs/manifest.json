@@ -3,7 +3,7 @@
   "name": "¡Calor!",
   "icons": [
     {
-      "src": "favicon.png",
+      "src": "https://progredemente.com/resources/calor.png",
       "type": "image/png",
       "sizes": "256x256"
     }

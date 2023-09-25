@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import './LegendVertical.css';
 import { getColor } from './common';
 

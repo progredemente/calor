@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, { Component } from "react";
 import { getColor } from './common';
 
 class Map extends Component {
